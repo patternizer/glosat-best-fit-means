@@ -1,9 +1,9 @@
 ![image](https://github.com/patternizer/glosat-homogenisation/blob/main/MODEL-1-monthly-x1r-SE1r-725092(boston_city_wso)-744920(bho).png)
 ![image](https://github.com/patternizer/glosat-homogenisation/blob/main/MODEL-1-fit-725092(boston_city_wso)-744920(bho).png)
 
-# glosat-homogenisation
+# Best Fit Means Algorithm
 
-Python codebase for development of homogenisation algorithms for land air surface temperature station data. Part of ongoing work for the [GloSAT](https://www.glosat.org) project: www.glosat.org 
+Python codebase for the Best Fit Means homogenisation algorithm being developed with Professor Tim Osborn for land air surface temperature station data. Part of ongoing work for the [GloSAT](https://www.glosat.org) project: www.glosat.org 
 
 ## Contents
 
@@ -21,7 +21,7 @@ The first step is to clone the latest glosat-homogenisation code and step into t
     $ git clone https://github.com/patternizer/glosat-homogenisation.git
     $ cd glosat-homogenisation
 
-Then create a DATA/ directory and copy to it the required input dataset listed in python glosat-best-fit-means-auto.
+Then create a DATA/ directory and copy to it the pickled dataframe GloSAT archive file df_temp.pkl.
 
 ### Using Standard Python
 
