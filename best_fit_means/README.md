@@ -1,5 +1,5 @@
-![image](https://github.com/patternizer/glosat-homogenisation/blob/main/MODEL-1-monthly-x1r-SE1r-725092(boston_city_wso)-744920(bho).png)
-![image](https://github.com/patternizer/glosat-homogenisation/blob/main/MODEL-1-fit-725092(boston_city_wso)-744920(bho).png)
+![image](https://github.com/patternizer/glosat-homogenisation/blob/main/best_fit_means/MODEL-1-monthly-x1r-SE1r-725092(boston_city_wso)-744920(bho).png)
+![image](https://github.com/patternizer/glosat-homogenisation/blob/main/best_fit_means/MODEL-1-fit-725092(boston_city_wso)-744920(bho).png)
 
 # Best Fit Means Algorithm
 
