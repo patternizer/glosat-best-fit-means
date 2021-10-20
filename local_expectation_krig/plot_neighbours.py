@@ -77,6 +77,10 @@ for i in range( len(codes) ):
     file.write("<div style='clear:both'></div>\n")
     file.write("<img src='../graphs/station_{:s}_obs.svg'/>\n".format(codes[i]))
     file.write("<div style='clear:both'></div>\n")
+    file.write("<img src='../graphs/cusum_{:s}_obs.svg'/>\n".format(codes[i]))
+    file.write("<div style='clear:both'></div>\n")
+    file.write("<img src='../graphs/homogenization_{:s}_obs.svg'/>\n".format(codes[i]))
+    file.write("<div style='clear:both'></div>\n")
     file.write("<img src='../graphs/neighbours.{:s}.png' style='float:left'/>".format(codes[i]))
     # write table of neighbours
     file.write("<table><tr><th>Neighbour</th><th>Name</th><th>Country</th><th>Distance</th><th>Lon/Lat</th><th>Years</th></tr>\n")

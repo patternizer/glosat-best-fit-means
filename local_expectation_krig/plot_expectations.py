@@ -104,7 +104,7 @@ for s in range(datat.shape[1]):
     date0, date1 = dates[0,0], dates[-1,0]
 
   # plot covering whole data
-  f, (ax0, ax1) = plt.subplots(2, 1, gridspec_kw={'height_ratios':[2,1],'hspace':0},sharex=True)
+  f, (ax0, ax1) = plt.subplots(2, 1, gridspec_kw={'height_ratios':[2,1],'hspace':0},sharex=True,figsize=(6,4))
   l0, = ax0.plot(moving_average(datef,12),moving_average(datat[:,s]-datan[:,s],12),'k-',lw=0.8)
   l1, = ax0.plot(moving_average(datef,12),moving_average(datae[:,s]           ,12),'b-',lw=0.5)
   ax0.fill_between(moving_average(datef,12),moving_average(datae[:,s]-2*datas[:,s],12),moving_average(datae[:,s]+2*datas[:,s],12),color='b',alpha=0.2,lw=0)
@@ -118,7 +118,7 @@ for s in range(datat.shape[1]):
   plt.close()
 
   # plot covering observations data
-  f, (ax0, ax1) = plt.subplots(2, 1, gridspec_kw={'height_ratios':[2,1],'hspace':0},sharex=True)
+  f, (ax0, ax1) = plt.subplots(2, 1, gridspec_kw={'height_ratios':[2,1],'hspace':0},sharex=True,figsize=(6,4))
   l0, = ax0.plot(moving_average(datef,12),moving_average(datat[:,s]-datan[:,s],12),'k-',lw=0.8)
   l1, = ax0.plot(moving_average(datef,12),moving_average(datae[:,s]           ,12),'b-',lw=0.5)
   ax0.fill_between(moving_average(datef,12),moving_average(datae[:,s]-2*datas[:,s],12),moving_average(datae[:,s]+2*datas[:,s],12),color='b',alpha=0.2,lw=0)

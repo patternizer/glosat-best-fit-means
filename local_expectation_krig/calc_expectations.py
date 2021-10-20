@@ -115,7 +115,6 @@ for arg in sys.argv[1:]:
     base0,base1 = [int(x) for x in arg.split("=")[1].split(",")]
   if arg.split("=")[0] == "-filter":    # year calc
     stationfilter = arg.split("=")[1]
-    pklcode = arg.split("=")[1]
 
 # years and months
 bases  = list(range(base0,base1+1))
@@ -282,4 +281,7 @@ djoin = pandas.merge( dflt, ddst, how="outer", on=["year","stationcode"] )
 
 # save the data
 print("Saving data\n",flush=True)
-djoin.to_pickle( "df_temp_expect"+"_"+str(pklcode).zfill(2)+".pkl", compression="bz2" )
+if stationfilter:
+  djoin.to_pickle( "df_temp_expect_{:s}.pkl".format(stationfilter.zfill(2)), compression="bz2" )
+else:
+  djoin.to_pickle( "df_temp_expect.pkl", compression="bz2" )
